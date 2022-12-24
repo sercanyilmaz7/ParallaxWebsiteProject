@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo Mono", monospace;
+  font-family: "Roboto Mono", monospace;
+}
+body,
+html {
+  height: 100%;
+}
+.container-1 {
+  background-image: url(./img/wot_2ndyear_wp_2560x1600.jpg);
+  min-height: 100%;
+}
+.container-2 {
+  background-image: url(./img/august17_wallpaper_2560x1600.jpg);
+  min-height: 100%;
+}
+.container-3 {
+  background-image: url(./img/march18_wallpaper_2560x1600.jpg);
+  min-height: 100%;
+}
+.container-4 {
+  background-image: url(./img/september17_wallpaper_2560x1600.jpg);
+  min-height: 100%;
+}
+.container-5 {
+  background-image: url(./img/september2016_wallpaper_2560x1600_noc.jpg);
+  min-height: 100%;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.span__1,
+.span__2,
+.span__3,
+.span__4,
+.span__5 {
+  /* font-size: 3rem; */
+  font-size: 3vw;
+  color: var(--span);
+  letter-spacing: 0.5vw;
+  background-color: var(--back);
+  padding: 2rem;
+  outline: 0.5rem inset var(--outlet);
+  outline-offset: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+  text-align: center;
+  padding: 1vw 5vw 2vw;
+  background-image: linear-gradient(135deg, #ffdb01 10%, #0e197d 100%);
+}
+
+.head-1,
+.head-2,
+.head-3,
+.head-4 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.par-1,
+.par-2,
+.par-3,
+.par-4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.container-1__s {
+  transition: 2s;
+}
+.container-1__s:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.container-5__s {
+  transition: 1.3s;
+  transition-timing-function: ease;
+}
+.container-5__s:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* @media  (max-width: 768px){
+  .par-1,
+  .par-2,
+  .par-3,
+  .par-4 {
+    font-size: 1vw;
+  }
+  .head-1,
+  .head-2,
+  .head-3,
+  .head-4{
+    font-size: 1vw;
+  }
+  .span__1,
+  .span__2,
+  .span__3,
+  .span__4,
+  .span__5{
+    font-size: 2vw;
+  }
+} */
+
+.button-click {
+  position: fixed;
+  top: 10px;
+  list-style: none;
+}
+
+.button-one {
+  background-color: black;
+  color: rgb(245, 63, 63);
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.button-two {
+  background-color: rgb(242, 187, 6);
+  color: black;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+:root {
+  --back: rgba(101, 93, 93, 0.441);
+  --outlet: rgb(242, 187, 6);
+  --span: white;
+}
